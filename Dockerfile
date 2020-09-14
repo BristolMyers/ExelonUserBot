@@ -1,4 +1,4 @@
-FROM bristolmyers/exelonuserbot:latest
+FROM alpine:latest:latest
 
 # Çalışma dizini
 ENV PATH="/home/userbot/bin:$PATH"
