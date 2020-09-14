@@ -1,0 +1,117 @@
+{
+  "name": "ExelonUserBot",
+  "description": "Userbot created by a SNAPDRAGON and custom fork by https://t.me/BristolMyers iletişim @ExelonSupport destek için",
+  "logo": "https://telegra.ph/file/f846d19602ef8ea3e9e64.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/BristolMyers/ExelonUserBot",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "stack": "container",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "TMP_DOWNLOAD_DIRECTORY": {
+      "description": "İndirilen dosyalar nereye gidecek.",
+      "value": "./DOWNLOADS/",
+      "required": false
+    },
+    "ALIVE_NAME": {
+      "description": "Alive komutunda çıkacak isminizi yazınız",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Bu değeri Telegramda @OtoMyTelegramBot tan Alabilirsiniz.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Bu değeri Telegramda @OtoMyTelegramBot tan Alabilirsiniz.",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "Bu değeri [https://exelonstringalici.bristolmyers.repl.run/] adresinden alabilirsiniz",
+      "value": ""
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "Satır içi düğme üreticisi için gerekli. Http://telegram.dog/BotFather adresinde bir bot yapın ve botunuzun kullanıcı adını alın",
+      "value": ""
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "Satır içi düğme üreticisi için gerekli. Http://telegram.dog/BotFather adresinde bir bot yapın ve botunuzun tokenini alın. Buna değer.",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "Botu güncellemek için gerekli ve diğer şeyler https://dashboard.heroku.com/account adresinden alın",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku uygulama adını buraya ekleyin. UserBot güncellemelerine yardımcı olur. ",
+      "value": "",
+      "required": false
+    },
+    "DEFAULT_BIO": {
+      "description": "Varsayılan profil biyografisi.",
+      "value": "",
+      "required": false
+    },
+    "MAX_FLOOD_IN_P_M_s": {
+      "description": "Bir kişinin bloke edilmeden önce öğleden sonra gönderebileceği maksimum mesaj sayısı. Değer bir tam sayı olmalıdır. Varsayılan olarak 6.",
+      "value": "6",
+      "required": false
+    },
+    "OCR_SPACE_API_KEY": {
+      "description": "OCR işlevi için gereklidir. Https://ocr.space/ocrapi adresinden alın",
+      "value": "",
+      "required": false
+    },
+    "REM_BG_API_KEY": {
+      "description": "Görüntü arka plan işlevselliğini kaldırmak için gereklidir. Https://www.remove.bg/ adresinden alın",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_PIC": {
+      "description": "Alive Komutunda Görükecek Medya (fotograf gif video)URL sini Giriniz",
+      "value": "https://telegra.ph/file/f846d19602ef8ea3e9e64.jpg",
+      "required": false
+    },
+    "AUTONAME": {
+      "description": ".autoname komutu için",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Lydia AI için gerekli. API'nizi almak için https://telegra.ph/Lydia-09-05 adresini takip edin.",
+      "value": "",
+      "required": false
+    },
+    "UB_BLACK_LIST_CHAT": {
+      "description": "blacklist_chats'i userbot özelliklerini istemediğiniz yere ayarlayın",
+      "value": "-1051754159",
+      "required": false
+    },
+    "DOWNLOAD_PFP_URL_CLOCK": {
+      "description": "AutoPic modül için gerekli. Profil Resminizin önizleme bağlantısı olan bir url",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "Autopic / get time'da Doğru Zaman için Gerekli. Saat diliminizi http://www.timezoneconverter.com/cgi-bin/findzone.tzc adresinden öğrenin",
+      "value": "Europe/Istanbul",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }]
+}
