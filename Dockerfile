@@ -1,4 +1,4 @@
-FROM alpine:latest:latest
+FROM alpine:latest
 
 # Çalışma dizini
 ENV PATH="/home/userbot/bin:$PATH"
